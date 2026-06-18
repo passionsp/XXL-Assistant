@@ -1,0 +1,169 @@
+{
+    "登录游戏": {
+        "launch_from_desktop": false,
+        "app_icon": "imgs/app_icon.png",
+        "main_template": "imgs/main_screen.png",
+        "max_clicks": 60,
+        "click_interval": 2.0,
+        "threshold": 0.7
+    },
+    "公会奖励": {
+        "threshold": 0.7,
+        "guild_btn": "imgs/guild_btn.png",
+        "guild_task_btn": "imgs/guild_task_btn.png",
+        "yijianlingqu": "imgs/yijianlingqu.png",
+        "back_btn": "imgs/back_btn.png",
+        "wishing_well_btn": "imgs/wishing_well_btn.png",
+        "donate_btn": "imgs/donate_btn.png",
+        "confirm_donate_btn": "imgs/confirm_donate_btn.png",
+        "main_template": "imgs/main_screen.png",
+        "blue_star_region": [
+            250,
+            250,
+            30,
+            30
+        ],
+        "purple_star_region": [
+            460,
+            250,
+            30,
+            30
+        ],
+        "yellow_star_region": [
+            670,
+            250,
+            30,
+            30
+        ],
+        "max_donate_loops": 10
+    },
+    "培育": {
+        "threshold": 0.7,
+        "peiyu_btn": "imgs/peiyu_btn.png",
+        "qihedu_btn": "imgs/qihedu_btn.png",
+        "jinqu_btn": "imgs/jinqu_btn.png",
+        "choupai_btn": "imgs/choupai_btn.png",
+        "queding_btn": "imgs/queding_btn.png",
+        "back_btn": "imgs/back_btn.png",
+        "main_template": "imgs/main_screen.png",
+        "item_count_region": [
+            720,
+            120,
+            100,
+            20
+        ]
+    },
+    "市集": {
+        "threshold": 0.7,
+        "shiji_btn": "imgs/shiji_btn.png",
+        "goumai_btn": "imgs/goumai_btn.png",
+        "shuaxin_btn": "imgs/shuaxin_btn.png",
+        "piaojuan_shuaxin_btn": "imgs/piaojuan_shuaxin_btn.png",
+        "quxiao_btn": "imgs/quxiao_btn.png",
+        "back_btn": "imgs/back_btn.png",
+        "main_template": "imgs/main_screen.png",
+        "products": {
+            "速通票": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "征才广告": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "健身中心入场券": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "困难模式入场券": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "能量大满罐": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "金酒铃": {
+                "enabled": true,
+                "max_price": 24
+            },
+            "观光工坊入场券": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "特卖型录": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "能量饮料": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "培欲房卡": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "入门营养惊喜包": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "进阶营养惊喜包": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "中级营养惊喜包": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "心得兑换券": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "空白碎片惊喜包": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "精华": {
+                "enabled": true,
+                "max_price": 0
+            }
+        },
+        "max_loops": 30,
+        "launch_from_desktop": false,
+        "max_clicks": 60,
+        "click_interval": 2.0,
+        "app_icon": "imgs/app_icon.png"
+    },
+    "每日任务": {
+        "threshold": 0.7,
+        "task_btn": "imgs/task_btn.png",
+        "yijianlingqu_btn": "imgs/yijianlingqu_btn.png",
+        "back_btn": "imgs/back_btn.png",
+        "main_template": "imgs/main_screen.png"
+    },
+    "香肠伯": {
+        "threshold": 0.7,
+        "sausage_btn": "imgs/sausage_btn.png",
+        "direct_claim_btn": "imgs/direct_claim_btn.png",
+        "roll_btn": "imgs/roll_btn.png",
+        "back_btn": "imgs/back_btn.png",
+        "main_template": "imgs/main_screen.png",
+        "action": "领取",
+        "launch_from_desktop": false,
+        "max_clicks": 60,
+        "click_interval": 2.0,
+        "app_icon": "imgs/app_icon.png"
+    },
+    "召唤": {
+        "threshold": 0.7,
+        "invite_btn": "imgs/invite_btn.png",
+        "single_summon_btn": "imgs/single_summon_btn.png",
+        "back_btn": "imgs/back_btn.png",
+        "main_template": "imgs/main_screen.png",
+        "quxiao_summon_btn": "imgs/quxiaozhaohuan_btn.png",
+        "launch_from_desktop": false,
+        "max_clicks": 60,
+        "click_interval": 2.0,
+        "app_icon": "imgs/app_icon.png"
+    }
+}

@@ -1,0 +1,28 @@
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 打包产物
+dist/
+build/
+*.spec
+
+# 本地配置文件（如果包含密码等）
+config/tasks_config.json   # 如果有敏感信息可忽略，否则可保留
+
+# 调试文件
+debug_ocr/
+debug_stars/
+
+# IDE 配置
+.vscode/
+.idea/
+
+# 日志
+*.log
