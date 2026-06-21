@@ -13,6 +13,7 @@ from core.tasks.shiji_task import ALL_PRODUCT_NAMES
 from core.tasks.dailytask_task import DailytaskTask
 from core.tasks.sausage_task import SausageTask
 from core.tasks.invite_task import InviteTask
+from core.tasks.dagong_task import DagongTask
 CONFIG_FILE = "config/tasks_config.json"
 
 class TaskThread(QThread):
@@ -121,16 +122,6 @@ class MainWindow(QMainWindow):
                     "max_loops": 30
                 }
             },
-            "每日任务": {
-                    "class": DailytaskTask,
-                    "config": {
-                        "threshold": 0.7,
-                        "task_btn": "imgs/task_btn.png",
-                        "yijianlingqu_btn": "imgs/yijianlingqu_btn.png",
-                        "back_btn": "imgs/back_btn.png",
-                        "main_template": "imgs/main_screen.png",
-                    }
-                },
             "香肠伯": {
                     "class": SausageTask,
                     "config": {
@@ -152,6 +143,29 @@ class MainWindow(QMainWindow):
                         "back_btn": "imgs/back_btn.png",
                         "main_template": "imgs/main_screen.png",
                         "quxiao_summon_btn": "imgs/quxiaozhaohuan_btn.png"
+                    }
+                },
+            "每日任务": {
+                    "class": DailytaskTask,
+                    "config": {
+                        "threshold": 0.7,
+                        "task_btn": "imgs/task_btn.png",
+                        "yijianlingqu_btn": "imgs/yijianlingqu_btn.png",
+                        "back_btn": "imgs/back_btn.png",
+                        "main_template": "imgs/main_screen.png",
+                    }
+                },
+            "打工": {
+                    "class": DagongTask,
+                    "config": {
+                        "threshold": 0.7,
+                        "dagong_btn": "imgs/dagong_btn.png",
+                        "back_btn": "imgs/back_btn.png",
+                        "main_template": "imgs/main_screen.png",
+                        "dagong_btn": "imgs/dagong_btn.png",
+                        "yijiandagong_btn": "imgs/yijiandagong_btn.png",   
+                        "yijianlingqu_btn": "imgs/yijianlingqu.png",
+                        "quedingdagong_btn": "imgs/quedingdagong_btn.png"
                     }
                 }
         }

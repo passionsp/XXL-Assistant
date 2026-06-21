@@ -79,7 +79,7 @@ class PeiyuTask(BaseTask):
             time.sleep(1)
 
             # 步骤7: 点击【确定】并点击屏幕中心5次，重复三次
-            for i in range(5):
+            for i in range(3):
                 self.log_signal.emit(f"第{i+1}次确定操作")
                 # 点击确定
                 if not self.click_btn(queding_btn, threshold):

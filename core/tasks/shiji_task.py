@@ -22,6 +22,7 @@ PRODUCT_MAPPING = {
     "空白碎片惊喜包": ["空白", "碎片", "惊喜包"],
     "精华": ["精华", "精", "华"],
     "碎片重洗牌": ["碎片", "碎", "重洗", "洗牌"],
+    "符文墨水": ["符文", "墨水", "符", "墨"],
 }
 ALL_PRODUCT_NAMES = list(PRODUCT_MAPPING.keys())
 
@@ -54,7 +55,7 @@ class ShijiTask(BaseTask):
         products_config = self.config.get("products", {})
         if not products_config:
             for name in ALL_PRODUCT_NAMES:
-                products_config[name] = {"enabled": False, "max_price": -1}
+                products_config[name] = {"enabled": True, "max_price": 0}
             self.config["products"] = products_config
             self.log_signal.emit("警告：未配置商品设置，使用默认（全部禁用）")
 
@@ -65,10 +66,10 @@ class ShijiTask(BaseTask):
             y_price = y_name + 40
             for col in range(5):
                 x_name = 20 + col * 180
-                x_price = x_name + 40
+                x_price = x_name + 35
                 product_regions.append({
                     "name_region": [x_name, y_name, 140, 20],
-                    "price_region": [x_price, y_price, 100, 20]
+                    "price_region": [x_price, y_price, 105, 20]
                 })
 
         # 点击市集按钮

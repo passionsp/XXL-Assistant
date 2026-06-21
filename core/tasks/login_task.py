@@ -7,12 +7,12 @@ class LoginTask(BaseTask):
         self.log_signal.emit("开始执行登录任务...")
 
         launch_from_desktop = self.config.get("launch_from_desktop", False)
-        app_icon_path = self.config.get("app_icon", "resources/imgs/app_icon.png")
-        main_template_path = self.config.get("main_template", "resources/imgs/main_screen.png")
+        app_icon_path = self.config.get("app_icon", "imgs/app_icon.png")
+        main_template_path = self.config.get("main_template", "imgs/main_screen.png")
         max_clicks = self.config.get("max_clicks", 60)
         click_interval = self.config.get("click_interval", 2.0)
         threshold = self.config.get("threshold", 0.7)
-
+        back_btn = self.config.get("back_btn", "imgs/back_btn.png")
         # 先检测当前是否已经在主界面（若不要求从桌面开始）
         if not launch_from_desktop:
             self.log_signal.emit("检查是否已在主界面...")
@@ -50,10 +50,10 @@ class LoginTask(BaseTask):
         for attempt in range(max_clicks):
             img = self.controller.screenshot()
             w, h = img.size
-            if find_template(img, main_template_path, threshold=threshold):
+            if find_template(img, main_template_path, threshold=threshold) or find_template(img, back_btn, threshold=threshold):
                 self.log_signal.emit("检测到主界面！登录成功")
                 self.finished_signal.emit(True)
-                return
+                return 
             # 点击屏幕中心
             self.controller.tap(w//2, h//2)
             self.log_signal.emit(f"第{attempt+1}次点击中心，等待加载...")

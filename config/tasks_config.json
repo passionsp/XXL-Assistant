@@ -51,6 +51,12 @@
             120,
             100,
             20
+        ],
+        "piaojuan_ocr_region": [
+            580,
+            840,
+            30,
+            20
         ]
     },
     "市集": {
@@ -124,6 +130,14 @@
                 "max_price": 0
             },
             "精华": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "碎片重洗牌": {
+                "enabled": true,
+                "max_price": 0
+            },
+            "符文墨水": {
                 "enabled": true,
                 "max_price": 0
             }
